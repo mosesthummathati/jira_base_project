@@ -38,7 +38,7 @@ const initializeExpress = (): void => {
   app.use((req, _res, next) => next(new RouteNotFoundError(req.originalUrl)));
   app.use(handleError);
 
-  app.listen(process.env.PORT || 3000, () => {
+  app.listen(process.env.PORT || 3001, () => {
     console.log('port is running on 3000');
   });
 };
